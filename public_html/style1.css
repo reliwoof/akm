@@ -1,0 +1,263 @@
+body {
+    background-color: black;
+    margin: 0;
+    color: white;
+}
+html, body, main { 
+    height: 100%; 
+    width: 100%;
+    margin: 0; 
+}
+* {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+}
+
+.parallax {
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 100%;
+    min-width: 100%;
+    width: 70%;
+    clear: both;
+    padding: 0;
+    margin: 0;
+}
+#home {
+    height:100%;
+}
+#zdjecie1 header {
+    text-align: center;
+    margin: 0;
+    display: block;
+    width: 100%;
+    color: white;
+    font-weight: bold;
+    padding: 0;
+    line-height: 300px;
+
+    /*font-family: "Roboto", sans-serif;*/
+}
+#tytul h1 {
+    text-align: center;
+    text-transform: capitalize;
+    font-size: 45px;
+    margin: 5% 0;
+    letter-spacing: 1.5px;
+    font-weight: 400;
+}
+#zdjecie1 {
+    background-image: url("img/pexels-photo-276583.jpeg");
+    width: 100%;
+    height: 100%;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url("img/1.jpg");
+    font-size: 100px;
+}
+#zdjecie2 {
+    background-image: url("img/3.jpg");
+}
+nav {
+    width:100%;
+    height:50px;
+    position: fixed;
+    display:flex;
+    justify-content: center;
+    text-transform: uppercase;
+    background-color: rgba(0,0,0,0.7);
+    z-index: 10;
+}
+nav ul {
+    margin:0;
+    height:100%;
+    /*background-color:blue;*/
+    width:50%;
+    line-height: 50px;
+}
+nav ul li {
+    text-align: center;
+    /*background-color:green;*/
+    width:24%;
+    float:left;
+    display: inline-block;
+    /*color: rgb(190,190,190);*/
+}
+nav ul li a{
+    text-decoration: none;
+    color: rgb(190,190,190);
+}
+nav ul li a:hover{
+    color: rgb(250,250,250);
+    cursor:pointer;
+}
+/*.menu li{
+    display: inline-block;
+    color: white;
+    float: right;
+    width: 20%;
+    height: 100%;
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+    vertical-align: middle;
+}*/
+/*.menu li a {
+    text-decoration: none;
+    color: white;
+    width: 100%;
+    height: 100%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+a:visited {
+    color: white;
+}*/
+#zdjecie2 > div {
+    width: 50%;
+    background-color: rgba(0,0,0,0.5);
+    height: 100%;
+}
+#omnie header {
+    text-align: center;
+    margin: 0;
+    display: block;
+    color: white;
+    font-weight: bold;
+    padding: 10% 0 5% 0;
+    font-size: 45px;
+}
+#omnie article{
+    padding: 5%;
+    margin-bottom: 15%;
+}
+#lista {
+    width: 100%;
+    margin: 0;
+    /*padding: 4% 0;*/
+    overflow: hidden;
+    text-align: center;
+    background-color: black;
+
+}
+#lista img {
+    display: inline-block;
+    float: left;
+    width: 33.333333%;
+    /*padding: 0 1%;*/
+    height: 100%;
+    margin: 0;
+
+}
+#zdjecie1 header {
+    /*display: flex;*/
+    /*justify-content: center;*/
+    /*align-items: center;*/
+    height:100%;
+    /*font-size: 80px;*/
+
+}
+#zdjecie2 header > div {
+    /*font-size: 80px;*/
+    color: white;
+}
+
+#omnie {
+    /*height: 65%;*/
+}
+#zdjecie2 p {
+    /*font-size: 30px;*/
+    color: white;
+    padding: 0 5%;
+
+}
+#kontakt {
+    height: 80%;
+    margin-bottom: 50px;
+}
+#kontakt > div {
+    height: 70%;
+    width: 100%;
+    padding: 2% 0;
+    background-color: black;
+}
+#danekontaktowe{
+    padding-top: 5%;
+    width: 50%;
+    float: right;
+    text-align: center;
+    /*font-size: 80px;*/
+    color: white;
+}
+#danekontaktowe header {
+    font-size: 40px;
+}
+#danekontaktowe article{
+    font-size: 20px;
+}
+textarea {
+    resize: none;
+    width: 100%;
+    height: 50%;
+    border: 0;
+    padding-left: 0;
+    padding-right: 0;
+}
+#formularz {
+    float: left;
+    width: 50%;
+    height: 100%;
+    text-align: center;
+}
+form {
+    display: inline-block;
+    width: 50%;
+    height: 100%;
+}
+#formularz input {
+    width: 100%;
+    display: inline-block;
+    margin-bottom: 8px;
+    height: 8%;
+    border: 0;
+    padding-left: 0;
+    padding-right: 0;
+}
+#submit {
+    width: 30% !important;
+    float: right;
+    display: block;
+    background-color: black;
+    color: white;
+    border: none;
+    font-weight: bold;
+    /*font-size: 30px;*/
+    outline: none;
+    cursor: pointer;
+}
+#submit:hover {
+    color: rgb(100,100,100);
+}
+input::placeholder {
+    font-family: "Roboto", sans-serif;
+    /*font-size: 25px;*/
+}
+textarea::placeholder {
+    font-family: "Roboto", sans-serif;
+    /*font-size: 25px;*/
+}
+.opis {
+    width: 100% !important;
+    display: inline-block;
+    background-color:black;
+}
+.opis p {
+    padding: 10px;
+    text-align: left;
+}
+
