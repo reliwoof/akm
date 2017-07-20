@@ -12,9 +12,9 @@
     </head>
     <body>
         <main>
-<!--                    <?php
+                    <?php
                         if (isset($_POST["email"])) {
-                            $to = 'karol.mazur@outlook.com';
+                            $to = 'ranameth@gmail.com';
                             $subject = $_POST["temat"];
                             $message = $_POST["tresc"];
                                 $telefon = $_POST["telefon"];
@@ -26,6 +26,7 @@
                             $success = mail($to, $subject, $message, $headers);
                             if (!$success) {
                                 $wynik = error_get_last()['message'];
+                                echo $wynik;
                             } else {
                                 $wynik = "Wysłano wiadomość e-mail.";
                                 $div = '<div id="mailing" style="position: fixed; width:100%; height: 50px; font-size:30px; text-align:center; z-index: 40; background-color: white;">' . $wynik . '</div>';
@@ -33,7 +34,7 @@
                                 }
                                 echo $div;
                         }
-                    ?>-->
+                    ?>
             <nav>
                 <ul class="menu">
                     <li><a href="#home">Strona główna</a></li>
@@ -135,9 +136,9 @@
                 return false;
             });
 
-//         $(function () {
-//                $("#mailing").delay(4000).fadeOut();
-//            });
+         $(function () {
+                $("#mailing").delay(4000).fadeOut();
+            });
         </script>
     </body>
 

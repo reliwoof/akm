@@ -5,6 +5,8 @@
  */
 $(function () {
     $(".opis").hide();
+
+
     $("#lista img").click(function () {
         var numer = $(this).attr('name');
         $(".opis").each(function () {
@@ -15,8 +17,12 @@ $(function () {
         });
         $("#zdj" + numer).slideToggle();
     });
+
     $(".opis").click(function () {
-        $(this).slideUp();
+        var selection = window.getSelection();
+        if (selection.toString().length === 0) {
+            $(this).slideUp();
+        }
     });
 
     function loadText(i) {
@@ -28,7 +34,7 @@ $(function () {
             if (this.readyState == 4 && this.status == 200)
             {
                 opis = this.responseText;
-                $("#zdj" + i).append(opis);
+                $("#zdj" + i + " .tekst").append(opis);
             }
         };
     }
